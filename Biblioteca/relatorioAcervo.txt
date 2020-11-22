@@ -1,0 +1,25 @@
+--- RELATÓRIO DO ACERVO ---
+----------------------------------------
+Livro: fable
+Autor: solid snake
+Categoria: espionagem
+Tematica: politica
+Ano do Livro: 2020
+Livro alugavel: S
+Unidades: 20
+----------------------------------------
+Livro: malandro
+Autor: big boss
+Categoria: aventura
+Tematica: armas
+Ano do Livro: 2011
+Livro alugavel: S
+Unidades: 30
+----------------------------------------
+Livro: metal gear solid
+Autor: snake
+Categoria: espionagem
+Tematica: politica
+Ano do Livro: 1998
+Livro alugavel: S
+Unidades: 10
