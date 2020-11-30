@@ -23,3 +23,11 @@ Tematica: politica
 Ano do Livro: 1998
 Livro alugavel: S
 Unidades: 10
+----------------------------------------
+Livro: NomeDolivro
+Autor: Autor
+Categoria: nomeCategoria
+Tematica: NomeTematica
+Ano do Livro: anoDoLivro
+Livro alugavel: (S/N)
+Unidades: quantidade

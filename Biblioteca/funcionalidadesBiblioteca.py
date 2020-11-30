@@ -149,8 +149,10 @@ def importarLivro():
     nomeArquivo = str(input("digite o nome do arquivo, siga o modelo (nomeDoArquivo.json): "))
     with open(nomeArquivo, "r") as read_file:
         dados = json.load(read_file)
-        for d in dados:
-            listaLivros.append(d)
+
+        listaLivros.append(dados)
+        salvarAlteracoes()
+        print("Importação feita!\n")
 
 
 def statusLivro():

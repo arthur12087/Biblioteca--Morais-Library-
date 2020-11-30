@@ -34,7 +34,8 @@ def menuSistema():
           "6 - DIGITE 6 PARA OBTER STATUS DE UM LIVRO\n"
           "7 - DIGITE 7 PARA GERAR RELATÓRIO DO ACERVO\n"
           "8 - DIGITE 8 PARA GERAR RELATÓRIO POR CATEGORIA\n"
-          "9 - DIGITE 9 PARA GERAR RELATÓRIO POR TEMATICA\n")
+          "9 - DIGITE 9 PARA GERAR RELATÓRIO POR TEMATICA\n"
+          "10 - DIGITE 10 PARA IMPORTAR UM LIVRO\n")
     respostaMenu = str(input(""))
 
     if respostaMenu == "1":
@@ -71,6 +72,10 @@ def menuSistema():
 
     elif respostaMenu == "9":
         relatorioTematica()
+        menuSistema()
+
+    elif respostaMenu == "10":
+        importarLivro()
         menuSistema()
 
     else:
