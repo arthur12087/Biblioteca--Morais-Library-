@@ -98,7 +98,7 @@ def buscarPorExemplares():
             break
 
     if livroEncontrado==False:
-        print("erro, tente novamente!\n")
+        print("Livro não encontrado, tente novamente!\n")
 
 
 def reservarTitulo():
@@ -194,6 +194,7 @@ def relatorioCategoria():
     respostaCategoria = str(input("informe a categoria: "))
     relatorio = open("relatorioPorCategoria.txt", "w")
     relatorio.writelines("--- RELATÓRIO DA CATEGORIA:" + respostaCategoria + "---\n")
+    livroEncontrado = False
     for i in listaLivros:
         if i['categoria'] == respostaCategoria:
             relatorio.write("-" * 40 + "\n")
@@ -204,15 +205,24 @@ def relatorioCategoria():
                             "Ano do Livro: " + i['anoLivro'] + "\n" +
                             "Livro alugavel: " + i['livroAlugavel'] + "\n" +
                             "Unidades: " + i['livroUnidades'] + "\n")
+            livroEncontrado = True
 
-    print("Relatório gerado, está disponível na pasta do projeto")
-    relatorio.close()
+
+        if livroEncontrado == False:
+            print("não existe livro com essa categoria!\n")
+            break
+
+    if livroEncontrado == True:
+        print("Relatório gerado, está disponível na pasta do projeto\n")
+        relatorio.close()
+
 
 
 def relatorioTematica():
     respostaTematica = str(input("informe a tematica: "))
     relatorio = open("relatorioPorTematica.txt", "w")
     relatorio.writelines("--- RELATÓRIO DA CATEGORIA:" + respostaTematica + "---\n")
+    livroEncontrado = False
     for i in listaLivros:
         if i['tematica'] == respostaTematica:
             relatorio.write("-" * 40 + "\n")
@@ -223,6 +233,13 @@ def relatorioTematica():
                             "Ano do Livro: " + i['anoLivro'] + "\n" +
                             "Livro alugavel: " + i['livroAlugavel'] + "\n" +
                             "Unidades: " + i['livroUnidades'] + "\n")
+            livroEncontrado = True
 
-    print("Relatório gerado, está disponível na pasta do projeto")
-    relatorio.close()
+
+        if livroEncontrado == False:
+            print("não existe livro com essa tematica!\n")
+            break
+
+    if livroEncontrado == True:
+        print("Relatório gerado, está disponível na pasta do projeto")
+        relatorio.close()
