@@ -1,17 +1,1 @@
---- RELATÓRIO DA CATEGORIA:politica---
-----------------------------------------
-Livro: fable
-Autor: solid snake
-Categoria: espionagem
-Tematica: politica
-Ano do Livro: 2020
-Livro alugavel: S
-Unidades: 20
-----------------------------------------
-Livro: metal gear solid
-Autor: snake
-Categoria: espionagem
-Tematica: politica
-Ano do Livro: 1998
-Livro alugavel: S
-Unidades: 10
+--- RELATÓRIO DA CATEGORIA:dasdasdadadas---

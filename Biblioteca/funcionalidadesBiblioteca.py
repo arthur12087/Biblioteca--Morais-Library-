@@ -34,7 +34,7 @@ def cadastroDeLivros():
 
 
     print("Livro cadastrado com sucesso!")
-    print(listaLivros)
+    
     perguntaCadastro = str(input("Deseja cadastrar mais algum livro? (S/N) "))
     if perguntaCadastro.upper() == "S":
         cadastroDeLivros()
@@ -45,7 +45,7 @@ def atualizarQtdTitulo():
     livroEncontrado = False
     for i in listaLivros:
         if i['titulo'] == nomeDoLivro:
-            novaQuantidade = int(input("Digite a nova quantidade de unidades: "))
+            novaQuantidade = str(input("Digite a nova quantidade de unidades: "))
             i['livroUnidades'] = novaQuantidade
 
             salvarAlteracoes()
